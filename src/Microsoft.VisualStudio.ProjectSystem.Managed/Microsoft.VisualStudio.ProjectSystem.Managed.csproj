@@ -1,6 +1,6 @@
 ﻿<!-- Copyright (c)  Microsoft.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\HostAgnostic.props"/>
+  <Import Project="..\HostAgnostic.props" />
   <PropertyGroup>
     <RootNamespace>Microsoft.VisualStudio</RootNamespace>
     <!-- The value of RuleInjectionClassName of XamlPropertyRule items defined by this project -->
@@ -28,7 +28,8 @@
     <InternalsVisibleTo Include="Microsoft.VisualStudio.ProjectSystem.FSharp.VS.UnitTests" />
     <InternalsVisibleTo Include="Microsoft.VisualStudio.ProjectSystem.Managed.UnitTests" />
     <InternalsVisibleTo Include="Microsoft.VisualStudio.ProjectSystem.Managed.VS.UnitTests" />
-    <InternalsVisibleTo Include="DynamicProxyGenAssembly2" Key="$(MoqPublicKey)"/>
+    <InternalsVisibleTo Include="DynamicProxyGenAssembly2" Key="$(MoqPublicKey)" />
+    <InternalsVisibleTo Include="Microsoft.VisualStudio.ProjectSystem.Razor" Key="$(RazorPublicKey)" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="ProjectSystem\Rules\AnalyzerReference.xaml.cs">
@@ -317,6 +318,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <DesignTimeTargetsFile Include="ProjectSystem\DesignTimeTargets\*.targets"/>
+    <DesignTimeTargetsFile Include="ProjectSystem\DesignTimeTargets\*.targets" />
   </ItemGroup>
 </Project>
